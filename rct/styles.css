@@ -1,16 +1,24 @@
-body {background-color: rgb(163, 59, 59);}
-
-h1 {
-  color: white;
-  text-align: center;
-  font-family: Verdana, sans-serif;
+body {
+  background-color: rgb(163, 59, 59);
 }
 
-.row {
-  height: 100%;
-  padding: 0;
-  margin: 0;
+.previews {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.preview {
+  object-fit: none;
+  object-position: 0px 0px;
+  width: 116px;
+  height: 116px;
+}
+
+.preview:hover {
+  object-position: 0px -116px;
+}
+
+.preview:active {
+  object-position: 0px -232px;
 }
