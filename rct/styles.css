@@ -30,16 +30,15 @@ body {
 }
 
 .preview {
-  object-fit: none;
-  object-position: 0px 0px;
   width: 116px;
   height: 116px;
 }
 
-.preview:hover {
-  object-position: 0px -116px;
+.preview:hover:not(:active) {
+  box-shadow: -1px -1px #7f1b1b inset, 1px 1px #c76767 inset;
 }
 
 .preview:active {
-  object-position: 0px -232px;
+  background-color: #c76767;
+  box-shadow: 1px 1px #7f1b1b inset;
 }
