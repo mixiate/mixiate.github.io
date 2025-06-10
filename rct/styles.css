@@ -32,6 +32,7 @@ body {
 .preview {
   width: 116px;
   height: 116px;
+  user-select: none;
 }
 
 @media (pointer: fine) {
