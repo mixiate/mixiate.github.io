@@ -21,7 +21,7 @@ body {
 
 .previews {
   display: grid;
-  grid-template-rows: repeat(auto-fill, 116px);
+  grid-auto-rows: 116px;
   grid-template-columns: repeat(auto-fill, 116px);
   max-width: 464px;
   padding: 20px;
