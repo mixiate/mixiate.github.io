@@ -23,10 +23,30 @@ body {
   display: grid;
   grid-auto-rows: 116px;
   grid-template-columns: repeat(auto-fill, 116px);
+  min-width: 116px;
   max-width: 464px;
+  margin: auto;
   padding: 20px;
   background-color: rgb(163, 59, 59);
   border: 1px solid #7f1b1b;
+}
+
+@media (max-width: 505px) {
+  .previews {
+    max-width: 348px;
+  }
+}
+
+@media (max-width: 389px) {
+  .previews {
+    max-width: 232px;
+  }
+}
+
+@media (max-width: 273px) {
+  .previews {
+    max-width: 116px;
+  }
 }
 
 .preview {
