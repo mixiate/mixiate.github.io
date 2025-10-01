@@ -24,7 +24,7 @@ body {
   grid-auto-rows: 116px;
   grid-template-columns: repeat(auto-fill, 116px);
   min-width: 116px;
-  max-width: 464px;
+  max-width: 348px;
   margin: auto;
   padding: 20px;
   background-color: rgb(163, 59, 59);
