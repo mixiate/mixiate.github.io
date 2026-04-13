@@ -1,5 +1,7 @@
 body {
-  background-color: #303132;
+  background-image: url("files/background.png");
+  background-position: center center;
+  background-color: rgb(19, 20, 23);
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
