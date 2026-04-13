@@ -1,3 +1,10 @@
+:root {
+  --text-colour: Gainsboro;
+  --previews-colour: rgb(163, 59, 59);
+  --previews-colour-light: #c76767;
+  --previews-colour-dark: #7f1b1b;
+}
+
 body {
   background-image: url("files/background.png");
   background-position: center center;
@@ -10,21 +17,15 @@ body {
 #name {
   font-family: Verdana, sans-serif;
   text-align: left;
-  color: GhostWhite;
+  color: var(--text-colour);
   text-shadow: 1px 1px 2px black;
 }
 
 #description {
   font-family: Verdana, sans-serif;
   text-align: center;
-  color: GhostWhite;
+  color: var(--text-colour);
   text-shadow: 1px 1px 2px black;
-}
-
-:root {
-  --previews-colour: rgb(163, 59, 59);
-  --previews-colour-light: #c76767;
-  --previews-colour-dark: #7f1b1b;
 }
 
 .previews {
@@ -80,7 +81,7 @@ body {
   padding: 20px;
   font-family: Verdana, sans-serif;
   text-align: center;
-  color: GhostWhite;
+  color: var(--text-colour);
   text-shadow: 1px 1px 2px black;
   min-height: 20px;
   height: auto;
@@ -89,7 +90,7 @@ body {
 footer {
   font-family: Verdana, sans-serif;
   text-align: center;
-  color: GhostWhite;
+  color: var(--text-colour);
   text-shadow: 1px 1px 2px black;
   font-size: smaller;
 }
