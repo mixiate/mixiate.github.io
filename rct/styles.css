@@ -19,6 +19,12 @@ body {
   text-shadow: 1px 1px 2px black;
 }
 
+:root {
+  --previews-colour: rgb(163, 59, 59);
+  --previews-colour-light: #c76767;
+  --previews-colour-dark: #7f1b1b;
+}
+
 .previews {
   display: grid;
   grid-auto-rows: 116px;
@@ -27,8 +33,8 @@ body {
   max-width: 348px;
   margin: auto;
   padding: 20px;
-  background-color: rgb(163, 59, 59);
-  border: 1px solid #7f1b1b;
+  background-color: var(--previews-colour);
+  border: 1px solid var(--previews-colour-dark);
 }
 
 @media (max-width: 505px) {
@@ -57,13 +63,13 @@ body {
 
 @media (pointer: fine) {
   .preview:hover:not(:active) {
-    box-shadow: -1px -1px #7f1b1b inset, 1px 1px #c76767 inset;
+    box-shadow: -1px -1px var(--previews-colour-dark) inset, 1px 1px var(--previews-colour-light) inset;
   }
 }
 
 .preview:active {
-  background-color: #c76767;
-  box-shadow: 1px 1px #7f1b1b inset;
+  background-color: var(--previews-colour-light);
+  box-shadow: 1px 1px var(--previews-colour-dark) inset;
 }
 
 #names {
